@@ -15,7 +15,7 @@ button,
 input,
 select,
 textarea {
-    color: #222;
+    color: #200;
 }
 
 body {
@@ -85,7 +85,7 @@ textarea {
 .chromeframe {
     margin: 0.2em 0;
     background: #ccc;
-    color: #000;
+    color: #023;
     padding: 0.2em 0;
 }
 
@@ -221,7 +221,7 @@ input[type=text]:valid, input[type=password]:valid {
 input[type=submit] {
     width: 200px;
     background-color: white;
-    color: #f50856;
+    color: #00853E;
     padding: 14px 20px;
     margin: 8px auto 30px;
     border: none;
@@ -241,7 +241,7 @@ input[type=submit] {
 
 input[type=submit]:hover {
     background-color: #dddddd;
-    color: #bb0642;
+    color: #00853E;
 }
 
 

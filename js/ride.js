@@ -41,7 +41,6 @@ WildRydes.map = WildRydes.map || {};
     function completeRequest(result) {
         var unicorn;
         var pronoun;
-        getweather(pickLocation);
         console.log('Response received from API: ', result);
         unicorn = result.Unicorn;
         pronoun = unicorn.Gender === 'Male' ? 'his' : 'her';
@@ -70,18 +69,7 @@ WildRydes.map = WildRydes.map || {};
             $('#noApiMessage').show();
         }
     });
-    
-    function getweather(loc){
-        let url = 'https://api.openweathermap.org/data/2.5/onecall?lat=32&lon=-97&exclude=minutely,hourly&appid=a099a51a6362902523bbf6495a0818aa
-';
-        fetch(url)
-            .then(response => response.jason())
-            .then(weather => {
-                let wx = latLonToWeather(weather);
-            let innerHTML = '';
-            let msg;
-        }
-    }
+   
     function handlePickupChanged() {
         var requestButton = $('#request');
         requestButton.text('Request Unicorn');
